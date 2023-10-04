@@ -33,6 +33,23 @@ main {
 article {
   padding-bottom: 30px;
 }
+
 #navigation li {
   padding: 3px 0;
+}
+
+.nav-item {
+  color: #393544;
+}
+
+.nav-item:hover {
+  color: #8d6346;
+}
+
+.nav-item:active {
+  color: white;
+}
+
+.main > article + article {
+  border-top: 1px solid #393544;
 }
