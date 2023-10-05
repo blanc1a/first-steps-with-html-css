@@ -44,6 +44,7 @@ article {
 
 #navigation li {
   padding: 3px 0;
+  list-style: none;
 }
 
 .nav-item {
@@ -61,6 +62,15 @@ article {
 .main > article + article {
   border-top: 1px solid #393544;
 }
-header p::after {
+.header p::after {
   content: "✨ ";
+}
+
+.experience-heading {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.sub-heading {
+  display: inline;
 }
