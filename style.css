@@ -1,11 +1,15 @@
 /*UNIVERSAL*/
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
+
 *::selection {
   color: #f7dfce;
   background-color: #746f83;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
 }
 body {
   margin: 0px;
