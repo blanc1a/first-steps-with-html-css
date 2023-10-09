@@ -30,7 +30,7 @@ main {
   text-align: center;
   background-color: #d1af97;
   color: #393544;
-  padding: 48px 16px;
+  padding: 70px 16px;
 }
 
 .main {
@@ -73,4 +73,33 @@ article {
 
 .sub-heading {
   display: inline;
+}
+
+main h2 {
+  position: relative;
+  right: 30px;
+}
+
+main article {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-weight: 800;
+  /*background-color: #8d6549;*/
+  border: 3px solid white;
+  padding: 10px;
+}
+
+#Contact ul li {
+  list-style: none;
+}
+
+#Contact ul {
+  padding-left: 0px;
 }
