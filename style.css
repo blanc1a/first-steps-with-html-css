@@ -30,6 +30,10 @@ h3 {
   padding: 4rem 1rem;
 }
 
+.header p::after {
+  content: "✨ ";
+}
+
 .header-refactoring {
   font-size: 4rem;
 }
@@ -72,9 +76,6 @@ article {
 .main > article + article {
   border-top: 0.1rem solid #393544;
 }
-.header p::after {
-  content: "✨ ";
-}
 
 .experience-heading {
   display: inline-block;
@@ -112,4 +113,43 @@ main article {
 
 #Contact ul {
   padding-left: 0;
+}
+
+/*MEDIA QUERIES*/
+@media print {
+  .button {
+    display: none;
+  }
+  #navigation {
+    display: none;
+    background-color: #8d6346;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 20px;
+  }
+
+  #button {
+    display: none;
+  }
+
+  .main article {
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 19px;
+  }
+
+  #button {
+    position: fixed;
+  }
+
+  .main article {
+    padding: 1.5rem 1.5rem;
+  }
 }
