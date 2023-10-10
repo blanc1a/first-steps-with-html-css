@@ -23,6 +23,7 @@ h3 {
 }
 
 /*SPECIFIC*/
+/*HEADER*/
 .header {
   text-align: center;
   background-color: #d1af97;
@@ -45,7 +46,7 @@ h3 {
 .header-refactoring p {
   font-size: 25%;
 }
-
+/*MAIN*/
 .main {
   max-width: 80ch;
   margin: 0 auto;
@@ -56,13 +57,16 @@ article {
   padding-bottom: 1.5rem;
 }
 
-#navigation li {
-  padding: 0.2rem 0;
-  list-style: none;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav-item {
   color: #393544;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .nav-item:hover {
@@ -75,6 +79,11 @@ article {
 
 .main > article + article {
   border-top: 0.1rem solid #393544;
+}
+
+.flex-job {
+  display: flex;
+  flex-direction: row;
 }
 
 .experience-heading {
@@ -115,6 +124,15 @@ main article {
   padding-left: 0;
 }
 
+.contact-item {
+  color: #393544;
+}
+
+.contact-item:hover {
+  color: #8d6346;
+}
+/*FOOTER*/
+
 /*MEDIA QUERIES*/
 @media print {
   #button {
@@ -133,6 +151,15 @@ main article {
 
   .main article {
     padding: 2rem 2rem;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flex-job {
+    flex-direction: column;
   }
 }
 
