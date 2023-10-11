@@ -14,6 +14,14 @@ html {
 }
 body {
   margin: 0;
+  --header-dark-color: rgba(2, 0, 36, 1);
+  --header-light-color: rgba(209, 175, 151, 1);
+  --hover: #8d6346;
+  --active: white;
+  --link-color: #393544;
+  --text-color: #393544;
+  --header: black;
+  --button-color: white;
 }
 
 h1,
@@ -26,14 +34,15 @@ h3 {
 /*HEADER*/
 .header {
   text-align: center;
-  background-color: #d1af97;
+  /* background-color: #d1af97; */
+  background-color: var(--header-light-color);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(209, 175, 151, 1) 30% 70%,
-    rgba(2, 0, 36, 1) 100%
+    var(--header-dark-color) 0%,
+    var(--header-light-color) 30% 70%,
+    var(--header-dark-color) 100%
   );
-  color: #393544;
+  color: var(--text-color);
   padding: 4rem 1rem;
 }
 
@@ -47,7 +56,7 @@ h3 {
 
 .header-refactoring h1 {
   font-size: 1em;
-  color: black;
+  color: var(--header);
 }
 
 .header-refactoring p {
@@ -71,17 +80,17 @@ article {
 }
 
 .nav-item {
-  color: #393544;
+  color: var(--link-color);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 .nav-item:hover {
-  color: #8d6346;
+  color: var(--hover);
 }
 
 .nav-item:active {
-  color: white;
+  color: var(--active);
 }
 
 .main > article + article {
@@ -116,10 +125,10 @@ main article {
   position: absolute;
   top: 0.9rem;
   right: 0.9rem;
-  color: white;
+  color: var(--button-color);
   font-weight: 800;
   /*background-color: #8d6549;*/
-  border: 0.2rem solid white;
+  border: 0.2rem solid var(--button-color);
   padding: 0.6rem;
 }
 
@@ -132,11 +141,11 @@ main article {
 }
 
 .contact-item {
-  color: #393544;
+  color: var(--link-color);
 }
 
 .contact-item:hover {
-  color: #8d6346;
+  color: var(--hover);
 }
 /*FOOTER*/
 .footer p {
@@ -144,9 +153,9 @@ main article {
   background-color: #d1af97;
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(209, 175, 151, 1) 40% 60%,
-    rgba(2, 0, 36, 1) 100%
+    var(--header-dark-color) 0%,
+    var(--header-light-color) 40% 60%,
+    var(--header-dark-color) 100%
   );
   color: #393544;
   font-weight: 700;
@@ -160,7 +169,6 @@ main article {
   }
   #navigation {
     display: none;
-    background-color: #8d6346;
   }
 }
 
