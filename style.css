@@ -27,6 +27,12 @@ h3 {
 .header {
   text-align: center;
   background-color: #d1af97;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(209, 175, 151, 1) 30% 70%,
+    rgba(2, 0, 36, 1) 100%
+  );
   color: #393544;
   padding: 4rem 1rem;
 }
@@ -41,6 +47,7 @@ h3 {
 
 .header-refactoring h1 {
   font-size: 1em;
+  color: black;
 }
 
 .header-refactoring p {
@@ -78,7 +85,7 @@ article {
 }
 
 .main > article + article {
-  border-top: 0.1rem solid #393544;
+  border-top: 0.1rem solid #020024;
 }
 
 .flex-job {
@@ -91,9 +98,9 @@ article {
   padding-right: 1.8rem;
 }
 
-/* .sub-heading {
-  display: inline;
-} */
+.sub-heading {
+  margin-top: 1.2rem;
+}
 
 main h2 {
   position: relative;
@@ -132,7 +139,20 @@ main article {
   color: #8d6346;
 }
 /*FOOTER*/
-
+.footer p {
+  text-align: center;
+  background-color: #d1af97;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(209, 175, 151, 1) 40% 60%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  color: #393544;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 /*MEDIA QUERIES*/
 @media print {
   #button {
