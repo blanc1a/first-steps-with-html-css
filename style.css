@@ -46,6 +46,24 @@ h3 {
   padding: 4rem 1rem;
 }
 
+#button {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  color: var(--button-color);
+  font-weight: 800;
+  /*background-color: #8d6549;*/
+  border: 0.2rem solid var(--button-color);
+  padding: 0.6rem;
+  opacity: 0.5;
+}
+
+.header:hover #button,
+.header:focus-within #button {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
 .header p::after {
   content: "✨ ";
 }
@@ -126,17 +144,6 @@ main h2 {
 main article {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
-}
-
-#button {
-  position: absolute;
-  top: 0.9rem;
-  right: 0.9rem;
-  color: var(--button-color);
-  font-weight: 800;
-  /*background-color: #8d6549;*/
-  border: 0.2rem solid var(--button-color);
-  padding: 0.6rem;
 }
 
 #Contact ul li {
