@@ -16,7 +16,7 @@ body {
   margin: 0;
   --header-dark-color: rgba(2, 0, 36, 1);
   --header-light-color: rgba(209, 175, 151, 1);
-  --hover: #8d6346;
+  --hover: #bb967c;
   --active: white;
   --link-color: #393544;
   --text-color: #393544;
@@ -37,7 +37,7 @@ h3 {
   /* background-color: #d1af97; */
   background-color: var(--header-light-color);
   background: linear-gradient(
-    90deg,
+    20deg,
     var(--header-dark-color) 0%,
     var(--header-light-color) 30% 70%,
     var(--header-dark-color) 100%
@@ -86,11 +86,18 @@ article {
 }
 
 .nav-item:hover {
-  color: var(--hover);
+  background-color: var(--hover);
+  color: var(--active);
+  border: solid var(--hover);
+  /* border-radius: 30%; */
+  transition: background-color 0.5s;
 }
 
 .nav-item:active {
   color: var(--active);
+}
+.nav-item:focus {
+  border: dashed var(--header-dark-color);
 }
 
 .main > article + article {
