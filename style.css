@@ -203,6 +203,14 @@ main article {
   .flex-job {
     flex-direction: row;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+  }
+  .content {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
