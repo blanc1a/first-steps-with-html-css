@@ -14,7 +14,7 @@ html {
 }
 body {
   margin: 0;
-  --header-dark-color: rgba(2, 0, 36, 1);
+  --header-dark-color: #271c19;
   --header-light-color: rgba(209, 175, 151, 1);
   --hover: #bb967c;
   --active: white;
@@ -22,6 +22,9 @@ body {
   --text-color: #393544;
   --header: black;
   --button-color: white;
+  --background-color: #55423d;
+  --main-color: #fff3ec;
+  background-color: var(--background-color);
 }
 
 h1,
@@ -39,11 +42,11 @@ h3 {
   background: linear-gradient(
     20deg,
     var(--header-dark-color) 0%,
-    var(--header-light-color) 30% 70%,
+    var(--header-light-color) 40% 60%,
     var(--header-dark-color) 100%
   );
   color: var(--text-color);
-  padding: 4rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 
 #button {
@@ -81,6 +84,22 @@ h3 {
   font-size: 25%;
 }
 /*MAIN*/
+#Profile,
+#Experience,
+#Skills,
+#Contact {
+  background-color: var(--main-color);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  /* border-radius: 30px; */
+}
+#Profile {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+#Contact {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 .main {
   max-width: 80ch;
   margin: 0 auto;
@@ -175,6 +194,7 @@ main article {
   font-weight: 700;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 /*MEDIA QUERIES*/
 @media print {
